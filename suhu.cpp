@@ -60,4 +60,33 @@ void konversiSuhu(char skalaAwal, char skalaAkhir, double nilai) {
         else if (skalaAkhir == 'r') hasil = konversiKKeR(nilai);
         else if (skalaAkhir == 'f') hasil = konversiKKeF(nilai);
     } 
+        
+
+else {
+        cout << "Maaf, skala suhu yang Anda masukkan tidak valid." << endl;
+        return;
+    }
+
+    cout << "Hasil konversi suhu: " << hasil << endl;
+}
+
+double konversiCKeF(double nilai) {
+    return nilai * FAKTOR_C_TO_F + 32.0;
+}
+
+double konversiCKeR(double nilai) {
+    return nilai * FAKTOR_C_TO_R;
+}
+
+double konversiCKeK(double nilai) {
+    return nilai + OFFSET_C_TO_K;
+}
+
+double konversiFKeC(double nilai) {
+    return (nilai - 32.0) * 5.0 / 9.0;
+}
+
+double konversiFKeR(double nilai) {
+    return (nilai - 32.0) * 4.0 / 9.0;
+}
     
