@@ -21,4 +21,22 @@ double konversiKKeF(double nilai);
 void konversiSuhu(char skalaAwal, char skalaAkhir, double nilai);
 
 
+int main() {
+    double nilai;
+    char skalaAwal, skalaAkhir; 
+
+    cout << "Selamat datang di program konversi suhu!" << endl;
+    cout << "Masukkan skala suhu awal (c, f, r, k): ";
+    cin >> skalaAwal;
+    cout << "Masukkan skala suhu yang diinginkan (c, f, r, k): ";
+    cin >> skalaAkhir; 
+    cout << "Masukkan nilai suhu yang ingin dikonversi: ";
+    cin >> nilai;
+
+    konversiSuhu(skalaAwal, skalaAkhir, nilai);
+    
+    return 0;    
+}
+
+
 
