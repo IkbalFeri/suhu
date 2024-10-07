@@ -37,6 +37,27 @@ int main() {
     
     return 0;    
 }
+void konversiSuhu(char skalaAwal, char skalaAkhir, double nilai) {
+    double hasil;
 
-
-
+    if (skalaAwal == 'c') {
+        if (skalaAkhir == 'f') hasil = konversiCKeF(nilai);
+        else if (skalaAkhir == 'r') hasil = konversiCKeR(nilai);
+        else if (skalaAkhir == 'k') hasil = konversiCKeK(nilai);
+    } 
+    else if (skalaAwal == 'f') {
+        if (skalaAkhir == 'c') hasil = konversiFKeC(nilai);
+        else if (skalaAkhir == 'r') hasil = konversiFKeR(nilai);
+        else if (skalaAkhir == 'k') hasil = konversiFKeK(nilai);
+    } 
+    else if (skalaAwal == 'r') {
+        if (skalaAkhir == 'c') hasil = konversiRKeC(nilai);
+        else if (skalaAkhir == 'f') hasil = konversiRKeF(nilai);
+        else if (skalaAkhir == 'k') hasil = konversiRKeK(nilai);
+    } 
+    else if (skalaAwal == 'k') {
+        if (skalaAkhir == 'c') hasil = konversiKKeC(nilai);
+        else if (skalaAkhir == 'r') hasil = konversiKKeR(nilai);
+        else if (skalaAkhir == 'f') hasil = konversiKKeF(nilai);
+    } 
+    
