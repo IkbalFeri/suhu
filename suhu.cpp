@@ -90,3 +90,30 @@ double konversiFKeR(double nilai) {
     return (nilai - 32.0) * 4.0 / 9.0;
 }
     
+double konversiFKeK(double nilai) {
+    return konversiFKeC(nilai) + OFFSET_C_TO_K;
+}
+
+double konversiRKeC(double nilai) {
+    return nilai * 5.0 / 4.0;
+}
+
+double konversiRKeF(double nilai) {
+    return nilai * 9.0 / 4.0 + 32.0;
+}
+
+double konversiRKeK(double nilai) {
+    return konversiRKeC(nilai) + OFFSET_C_TO_K;
+}
+
+double konversiKKeC(double nilai) {
+    return nilai - OFFSET_C_TO_K;
+}
+
+double konversiKKeR(double nilai) {
+    return konversiKKeC(nilai) * FAKTOR_C_TO_R;
+}
+
+double konversiKKeF(double nilai) {
+    return konversiKKeC(nilai) * FAKTOR_C_TO_F + 32.0;
+}
