@@ -34,8 +34,7 @@ int main() {
     cin >> nilai;
 
     konversiSuhu(skalaAwal, skalaAkhir, nilai);
-    
-    return 0;    
+    return 0;  
 }
 void konversiSuhu(char skalaAwal, char skalaAkhir, double nilai) {
     double hasil;
